@@ -3,6 +3,12 @@
 ## Introduction
 This is an advanved theme for CanvasLMS to create a highly visual style with the intent in engaging younger users. It is built using CSS and Javascript that can be uploaded through the themes interface in your Canvas admin screens.
 
+Major changes introduced by this theme include
+- Icon Driven Menus (SVGs)
+- Video background on login screen
+- Progress bar on dashboard cards *(still a work in progress)*
+- Vibrant colorful visual style
+
 ## Screenshots
 [![Dashboard](/Screenshots/dashboard.png?raw=true)](Dashboard)
 
