@@ -1,0 +1,631 @@
+/* @group Fonts */
+
+/*Load fonts*/
+@import 'https://fonts.googleapis.com/css?family=Lato|Lobster|Patrick+Hand';
+
+/* @end */
+
+/* @group Login Page */
+
+/*resize the login box to fit my image and change the color of 'stay signed in'*/
+body.ic-Login-Body {
+	background-image: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/video/screencap.png) !;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body.modal #modal-box.login-box { 
+  height: 405px;
+  width: 623px;
+  color: #071135;
+}
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+video#bgvid {
+    transition: 1s opacity;
+}
+
+.video-dottedoverlay {
+    background-image: url('https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/video/gridtile.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+
+#modal-box .btn { margin-right: 10px !important; }
+
+/*change the color of the login button*/
+
+/*login box*/
+
+body.modal #modal-box.login-box { 
+ background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/Alpha/images/logo.png) no-repeat 50% 15%;
+ background-size: 560px; 
+ background-color: rgba(0,0,0, .75);
+ box-shadow: none; -moz-box-shadow:none; -webkit-box-shadow:none;
+}
+
+#register_link { display: none; }
+body.modal.no-headers #footer-links a {color:#fff;}
+/*this will remove the extra canvas logo*/
+body.modal #modal-box.login-box h1 { 
+  background: none;
+  height: 200px;
+}
+
+body.modal #modal-box .button, body.modal #login-box .button {
+  background-color: #727272!important;
+  background-image: none !important;
+  border-color: #727272;
+}
+  
+
+#login_form .btn-primary{
+  background-color: #727272;
+  background-image: none;
+  border-color: #727272;
+  color:#fff;
+
+   -webkit-transition: all 500ms ease-out .5s;
+    -moz-transition: all 500ms ease-out .5s;
+    -o-transition: all 500ms ease-out .5s;
+    transition: all 500ms ease-out .5s;
+  }
+
+
+#login_form .btn-primary:hover {
+  background-color: #212B60;
+  background-image: none;
+  border-color:#212B60;
+  color:#fff;
+
+   -webkit-transition: all 500ms ease-out .5s;
+    -moz-transition: all 500ms ease-out .5s;
+    -o-transition: all 500ms ease-out .5s;
+    transition: all 500ms ease-out .5s;
+  }
+#modal-box.login-box {background-color: transparent; box-shadow: none; -moz-box-shadow:none; webkit-box-shadow:none;}  
+  
+#login_form .login-options { color: gray; }
+
+/*change the color of 'don't know your password'*/
+body.modal #modal-box.login-box a { color: gray !important; }
+
+#forgot_password_instructions{color:#fff !important;}
+body.modal #modal-box.login-box a {color: #fff !important;}
+
+.ic-Login__content {
+	background-color:rgba(38,180,215,.7);
+	background-image: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png");
+	font-family: lobster;
+}
+
+/* @end */
+
+
+/* @group Dashboard */
+
+.ic-DashboardCard {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.ic-Dashboard-header .ic-Dashboard-header_title {
+	font-size: 2em;
+	color: #00b4d7;
+	background: transparent;
+}
+
+.ic-DashboardCard__header_content {
+	height: auto;
+	padding: 10px 18px 0;
+}
+
+.ic-DashboardCard__header-subtitle, .ic-DashboardCard__header-term {
+	padding-bottom: 10px;
+}
+
+.ic-DashboardCard__header_hero {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 100px;
+}
+
+.ic-DashboardCard__action-container {
+	border-top: 1px solid #ccc;
+}
+
+.ic-DashboardCard__action-container .ic-DashboardCard__action {
+	border-right: 1px solid #ccc;
+}
+
+.ic-DashboardCard__action-container .ic-DashboardCard__action:last-child {
+	border-right: 0px none;
+}
+
+/* @group Progress Bar */
+
+#progressbar {
+}
+/* @end */
+
+/* @group Notifications */
+
+.ic-notification {
+	border: 0px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	background: #3799d1;
+	border-radius: 10px;
+}
+
+.ic-notification__icon {
+	background: transparent;
+}
+
+.ic-notification__actions i[class*=icon-] {
+	color: #00b4d7;
+}
+
+.ic-notification.ic-notification--admin-created .ic-notification__title {
+	font-family: Lobster;
+	font-size: 2em;
+	text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.4);
+	letter-spacing: .05em;
+	color: #00b4d7;
+}
+
+.ic-notification.ic-notification--admin-created .ic-notification__message {
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+
+.ic-notification__message p {
+	margin: 5px 0;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group Menu Layout */
+.ic-app-header__primary,
+.ic-app-header__logomark-container {
+	background-image: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png");
+	background-color: #26b4d7 !important;
+	padding: 0px;
+}
+
+.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .menu-item__text {
+	color: #fff;
+}
+
+.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
+	background-image: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png");
+	background-color: #ff8d00 !important;
+}
+
+.ReactTray__Content {
+	background: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png") #fff !important;
+}
+
+.ReactTray__Content {
+	padding: 18px 10px;
+}
+
+.ic-app-header__menu-list li:hover {
+	background: #000;
+}
+
+.ic-app-header__menu-list-link:hover{
+	background-image: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png");
+	background-color: #006c81 !important;
+}
+
+.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .menu-item__text {
+	color: #fff !;
+}
+
+/* @end */
+
+/* @group Main Menu */
+
+.kz_main-menu-icon {
+	width: 40px;
+	height: 40px;
+	margin-top: 4px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/inbox.svg) no-repeat top left;
+}
+
+.menu-item__text {
+	font-family: Lobster;
+	font-size: 1.1em;
+}
+
+/* @group Standard Icons */
+
+.ic-app-header__menu-list-link .ic-icon-svg {
+	display: none;
+}
+
+#kz_icon_login {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/login.svg) no-repeat top left;
+}
+
+#kz_icon_account {
+	display: none;
+}
+
+#kz_icon_admin {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/admin.svg) no-repeat top left;
+}
+
+#kz_icon_home {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/home.svg) no-repeat top left;
+}
+
+#kz_icon_dashboard {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/dashboard.svg) no-repeat top left;
+	width: 40px;
+	height: 40px;
+}
+
+#kz_icon_groups {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/groups.svg) no-repeat top left;
+}
+
+#kz_icon_courses {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/courses.svg) no-repeat top left;
+}
+
+#kz_icon_calendar {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/calendar.svg) no-repeat top left;
+}
+
+#kz_icon_inbox {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/inbox.svg) no-repeat top left;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 40px;
+}
+
+#kz_icon_arc {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/arc.svg) no-repeat top left;
+}
+
+#kz_icon_commons {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/commons.svg) no-repeat top left;
+}
+
+#kz_icon_help {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/help.svg) no-repeat top left;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 40px;
+}
+
+/* @end */
+
+
+/* @end */
+
+/* @group Course Menu */
+.kz_course-menu-icon {
+	width: 40px;
+	height: 40px;
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/default-icon.svg) no-repeat top left;
+}
+
+.section-tab-hidden .kz_course-menu-icon {
+	display: none;
+}
+
+/* @group Icons */
+
+/* @group Standard Icons */
+
+#kz_icon_home {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/home.svg) no-repeat top left;
+}
+
+#kz_icon_announcements {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/announcements.svg) no-repeat top left;
+}
+
+#kz_icon_collaborations {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/collaborations.svg) no-repeat top left;
+}
+
+#kz_icon_marks,
+#kz_icon_grades {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/grades.svg) no-repeat top left;
+}
+
+#kz_icon_people {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/people.svg) no-repeat top left;
+}
+
+#kz_icon_modules {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/modules.svg) no-repeat top left;
+}
+
+#kz_icon_pages {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/pages.svg) no-repeat top left;
+}
+
+#kz_icon_assigments {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/assigments.svg) no-repeat top left;
+}
+
+#kz_icon_discussions {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/discussions.svg) no-repeat top left;
+}
+
+#kz_icon_files {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/files.svg) no-repeat top left;
+}
+
+#kz_icon_outcomes {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/outcomes.svg) no-repeat top left;
+}
+
+#kz_icon_syllabus {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/discussions.svg) no-repeat top left;
+}
+
+#kz_icon_conferences {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/conferences.svg) no-repeat top left;
+}
+
+#kz_icon_quizzes {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/quizzes.svg) no-repeat top left;
+}
+
+#kz_icon_settings {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/settings.svg) no-repeat top left;
+}
+
+#kz_icon_users {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/users.svg) no-repeat top left;
+}
+
+#kz_icon_statistics {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/statistics.svg) no-repeat top left;
+}
+
+#kz_icon_permissions {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/permissions.svg) no-repeat top left;
+}
+
+#kz_icon_rubrics {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/rubrics.svg) no-repeat top left;
+}
+
+#kz_icon_grading {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/grading.svg) no-repeat top left;
+}
+
+#kz_icon_questionbanks {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/questionbanks.svg) no-repeat top left;
+}
+
+#kz_icon_subaccounts {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/subaccounts.svg) no-repeat top left;
+}
+
+#kz_icon_facultyjournal {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/facultyjournal.svg) no-repeat top left;
+}
+
+#kz_icon_terms {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/terms.svg) no-repeat top left;
+}
+
+#kz_icon_authentication {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/authentication.svg) no-repeat top left;
+}
+
+#kz_icon_sisimports {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/sisimports.svg) no-repeat top left;
+}
+
+#kz_icon_themes {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/themes.svg) no-repeat top left;
+}
+
+#kz_icon_developerkeys {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/developerkeys.svg) no-repeat top left;
+}
+
+#kz_icon_canvasdata {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/canvasdata.svg) no-repeat top left;
+}
+
+#kz_icon_admintools {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/admintools.svg) no-repeat top left;
+}
+
+/* @end */
+
+/* @group Non Standard LTI Icons */
+
+#kz_icon_attendance {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/attendance.svg) no-repeat top left;
+}
+
+#kz_icon_bookshelf {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/bookshelf.svg) no-repeat top left;
+}
+
+#kz_icon_chat {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/chat.svg) no-repeat top left;
+}
+
+#kz_icon_scorm {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/scorm.svg) no-repeat top left;
+}
+
+#kz_icon_onenote {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/onenote.svg) no-repeat top left;
+}
+
+#kz_icon_officemix {
+	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/officemix.svg) no-repeat top left;
+	background-size: contain;
+	height: 57px;
+	width: 57px;
+}
+
+/* @end */
+
+/* @end */
+
+.list-view>ul>li>a, .list-view>nav>ul>li>a {
+	margin-bottom: 0px;
+	font-family: 'Lobster', cursive !important;
+}
+
+.list-view>ul>li>a:hover, 
+.list-view>nav>ul>li>a:hover {
+	background-color: #f9fafc !important;
+}
+
+.list-view>ul>li>a img, .list-view>nav>ul>li>a img {
+	margin-bottom: 5px;
+	padding-left: 10px;
+}
+
+.list-view a.active {
+	background: transparent !important;
+}
+
+
+.grades .nav-badge {
+	position: relative;
+	top: -35px;
+	left: 25px;
+}
+
+.ic-app-course-menu {
+	padding: 10px 10px 10px 10px;
+}
+
+#content {
+	padding: 10px;
+}
+
+.pages .header-bar-outer-container,
+.pages .header-bar-outer-container .header-bar-container {
+	min-height: 30px;
+}
+
+.pages.show.home .show-content {
+	padding-top: 15px;
+}
+/* @end */
+
+body {
+    background: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/page.jpg") repeat-y scroll center top transparent;
+    font-family: 'Lato', sans-serif;
+}
+
+input, button, select, textarea {
+	font-family: 'Lato', sans-serif;
+}
+
+#breadcrumbs, .header-bar {
+	background: transparent;
+}
+
+.pages.show .course-title,
+.pages.show .page-title {
+	font-size: 2em;
+	color: #00b4d7 !important;
+}
+
+.header-bar {
+	padding-bottom: 0px;
+	border-bottom: 1px dashed #20d7fb;
+}
+
+body.course-menu-expanded:not(.ic-no-flex-layout):not(.embedded) .ic-app-main-layout-horizontal {
+    margin-left: 150px;
+}
+
+.ic-avatar {
+	border-radius: 5px;
+}
+
+h1, h2 {
+	font-family: Lobster;
+}
+.pages.show .course-title {
+	color: #f05e36;
+}
+.list-view>ul>li, .list-view>nav>ul>li {
+    width: 100px;
+}
+
+.ic-app-header__logomark {
+    height: 75px;
+    -webkit-transform: scale3d(0.7, 0.7, 0.7);
+    transform: scale3d(0.7, 0.7, 0.7);
+}
+.menu-item__text {
+    margin-top: 2px;
+}
+
+.menu-item-icon-container .ic-avatar {
+    width: 46px;
+    height: 46px;
+}
+
+.ic-app-header__menu-list-link {
+    padding: 7px 0;
+}
+
+.ic-app-course-menu {
+    width:150px;
+}
+.list-view a.active {
+    font-weight: 500;
+    color: #0061ad;
+}
+.list-view>ul>li>a, .list-view>nav>ul>li>a {
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.list-view>ul>li, .list-view>nav>ul>li {
+    padding: 0;
+    width: auto;
+    margin-bottom: 5px;
+}
+.list-view a.active:hover,.list-view a.active:focus {
+	background-color:#cff4ff;
+}
+
