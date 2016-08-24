@@ -8,6 +8,9 @@ Major changes introduced by this theme include
 - Video background on login screen
 - Progress bar on dashboard cards *(still a work in progress)*
 - Vibrant colorful visual style
+- Use of Google webfonts (Lato and Lobster)
+
+**Important Note - This should be considered BETA code. Use at your own risk!**
 
 ## Screenshots
 [![Dashboard](/Screenshots/dashboard.png?raw=true)](Dashboard)
