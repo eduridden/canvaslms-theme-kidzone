@@ -6,9 +6,16 @@ This is an advanved theme for CanvasLMS to create a highly visual style with the
 Major changes introduced by this theme include
 - Icon Driven Menus (SVGs)
 - Video background on login screen
-- Progress bar on dashboard cards *(still a work in progress)*
 - Vibrant colorful visual style
 - Use of Google webfonts (Lato and Lobster)
+
+## Instalation Notes
+- STEP ONE: Download Kidzone Theme from Github (link below)
+- STEP TWO: Upload /svgicons, /bg and /video folders to a public webspace
+- STEP THREE: Edit kidzone.css to update URLS to the address listed above
+- STEP FOUR: Log into to Canvas as an Admin and create a new Theme.
+- STEP FIVE: Upload the kidzone.css and kidzone.js files to the theme.
+- STEP SIX: Apply theme.
 
 **Important Note - This should be considered BETA code. Use at your own risk!**
 
@@ -23,7 +30,8 @@ Major changes introduced by this theme include
 
 [![Inbox](/Screenshots/inbox.png?raw=true)](Inbox)
 
-##Links
+## Links
 - [CanvasLMS Website](https://www.canvaslms.com/)
 - [My Demo Site](https://julian.instructure.com/)
+- [KidZone Github Repository](https://github.com/eduridden/canvaslms-theme-kidzone/)
 - [Follow me on Twitter @Eduridden](https://twitter.com/EduRidden)
