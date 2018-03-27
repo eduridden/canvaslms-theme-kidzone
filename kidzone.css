@@ -1,7 +1,7 @@
 /* @group Fonts */
 
 /*Load fonts*/
-@import 'https://fonts.googleapis.com/css?family=Lato|Lobster|Patrick+Hand';
+@import 'https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Permanent+Marker';
 
 /* @end */
 
@@ -9,7 +9,7 @@
 
 /*resize the login box to fit my image and change the color of 'stay signed in'*/
 body.ic-Login-Body {
-	background-image: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/video/screencap.png) !;
+	background-image: url(http://www.eduridden.com/themes/kidzone/video/screencap.png) !;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -40,7 +40,7 @@ video#bgvid {
 }
 
 .video-dottedoverlay {
-    background-image: url('https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/video/gridtile.png');
+    background-image: url('http://www.eduridden.com/themes/kidzone/video/gridtile.png');
     background-repeat: repeat;
     width: 100%;
     height: 100%;
@@ -58,7 +58,7 @@ video#bgvid {
 /*login box*/
 
 body.modal #modal-box.login-box { 
- background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/Alpha/images/logo.png) no-repeat 50% 15%;
+ background: url(http://www.eduridden.com/themes/alpha/images/logo.png) no-repeat 50% 15%;
  background-size: 560px; 
  background-color: rgba(0,0,0, .75);
  box-shadow: none; -moz-box-shadow:none; -webkit-box-shadow:none;
@@ -115,19 +115,30 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 
 .ic-Login__content {
 	background-color:rgba(38,180,215,.7);
-	background-image: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png");
-	font-family: lobster;
+	background-image: url("http://www.eduridden.com/themes/kidzone/bg/dots-pattern.png");
+	font-family: 'Permanent Marker', cursive;
 }
 
 /* @end */
 
 
 /* @group Dashboard */
+.ic-Dashboard-header__layout {
+	background: transparent;
+}
 
 .ic-DashboardCard,
 .ic-DashboardCard__header_image {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+}
+
+.ic-DashboardCard__action i[class*=icon-]:before, .ic-DashboardCard__action i[class^=icon-]:before {
+	font-size: 18px;
+}
+
+ic-DashboardCard__header_hero {
+	opacity: .2 !important;
 }
 
 .ic-Dashboard-header .ic-Dashboard-header_title {
@@ -141,10 +152,6 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 	padding: 10px 18px 0;
 }
 
-.ic-DashboardCard__header-subtitle, .ic-DashboardCard__header-term {
-	padding-bottom: 10px;
-}
-
 .ic-DashboardCard__header_hero {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -153,10 +160,11 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 
 .ic-DashboardCard__action-container {
 	border-top: 1px solid #ccc;
+	height: 2rem;
 }
 
 .ic-DashboardCard__action-container .ic-DashboardCard__action {
-	border-right: 1px solid #ccc;
+	padding-top: 3px;
 }
 
 .ic-DashboardCard__action-container .ic-DashboardCard__action:last-child {
@@ -187,7 +195,7 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 }
 
 .ic-notification.ic-notification--admin-created .ic-notification__title {
-	font-family: Lobster;
+	font-family: 'Permanent Marker', cursive;
 	font-size: 2em;
 	text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.4);
 	letter-spacing: .05em;
@@ -210,10 +218,10 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 /* @end */
 
 /* @group Menu Layout */
+.ic-app-header,
 .ic-app-header__primary,
 .ic-app-header__logomark-container {
-	background-image: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png");
-	background-color: #26b4d7 !important;
+	background-image: url("http://www.eduridden.com/themes/kidzone/bg/dots-pattern.png");
 	padding: 0px;
 }
 
@@ -222,12 +230,12 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 }
 
 .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
-	background-image: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png");
+	background-image: url("http://www.eduridden.com/themes/kidzone/bg/dots-pattern.png");
 	background-color: #ff8d00 !important;
 }
 
 .ReactTray__Content {
-	background: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png") #fff !important;
+	background: url("http://www.eduridden.com/themes/kidzone/bg/page.jpg") #fff !important;
 }
 
 .ReactTray__Content {
@@ -239,7 +247,7 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 }
 
 .ic-app-header__menu-list-link:hover{
-	background-image: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/dots-pattern.png");
+	background-image: url("http://www.eduridden.com/themes/kidzone/bg/dots-pattern.png");
 	background-color: #006c81 !important;
 }
 
@@ -254,16 +262,25 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 .kz_main-menu-icon {
 	width: 40px;
 	height: 40px;
+	padding-right:10px;
 	margin-top: 4px;
 	margin-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/inbox.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/inbox.svg) no-repeat top left;
+}
+
+#kz_icon_arc {
+	height: 30px !important;
+	width: 30px !important;
 }
 
 .menu-item__text {
-	font-family: Lobster;
-	font-size: 1.1em;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.menu-item-icon-container div#kz_icon_dashboard {
+	display: none;
 }
 
 /* @group Standard Icons */
@@ -273,7 +290,7 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 }
 
 #kz_icon_login {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/login.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/login.svg) no-repeat top left;
 }
 
 #kz_icon_account {
@@ -281,33 +298,33 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 }
 
 #kz_icon_admin {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/admin.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/admin.svg) no-repeat top left;
 }
 
 #kz_icon_home {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/home.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/home.svg) no-repeat top left;
 }
 
 #kz_icon_dashboard {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/dashboard.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/dashboard.svg) no-repeat top left;
 	width: 40px;
 	height: 40px;
 }
 
 #kz_icon_groups {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/groups.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/groups.svg) no-repeat top left;
 }
 
 #kz_icon_courses {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/courses.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/courses.svg) no-repeat top left;
 }
 
 #kz_icon_calendar {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/calendar.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/calendar.svg) no-repeat top left;
 }
 
 #kz_icon_inbox {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/inbox.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/inbox.svg) no-repeat top left;
 	margin-left: auto;
 	margin-right: auto;
 	height: 40px;
@@ -315,15 +332,15 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 }
 
 #kz_icon_arc {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/arc.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/arcmedia.svg) no-repeat top left;
 }
 
 #kz_icon_commons {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/commons.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/commons.svg) no-repeat top left;
 }
 
 #kz_icon_help {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/help.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/help.svg) no-repeat top left;
 	margin-left: auto;
 	margin-right: auto;
 	height: 40px;
@@ -337,9 +354,11 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 
 /* @group Course Menu */
 .kz_course-menu-icon {
-	width: 40px;
-	height: 40px;
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/default-icon.svg) no-repeat top left;
+	width: 25px;
+	height: 25px;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/default-icon.svg) no-repeat top left;
+	float: left;
+	padding-right: 5px;
 }
 
 .section-tab-hidden .kz_course-menu-icon {
@@ -351,124 +370,124 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 /* @group Standard Icons */
 
 #kz_icon_home {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/home.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/home.svg) no-repeat top left;
 }
 
 #kz_icon_announcements {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/announcements.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/announcements.svg) no-repeat top left;
 }
 
 #kz_icon_collaborations {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/collaborations.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/collaborations.svg) no-repeat top left;
 }
 
 #kz_icon_marks,
 #kz_icon_grades {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/grades.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/grades.svg) no-repeat top left;
 }
 
 #kz_icon_people {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/people.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/people.svg) no-repeat top left;
 }
 
 #kz_icon_modules {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/modules.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/modules.svg) no-repeat top left;
 }
 
 #kz_icon_pages {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/pages.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/pages.svg) no-repeat top left;
 }
 
 #kz_icon_assigments {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/assigments.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/assigments.svg) no-repeat top left;
 }
 
 #kz_icon_discussions {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/discussions.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/discussions.svg) no-repeat top left;
 }
 
 #kz_icon_files {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/files.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/files.svg) no-repeat top left;
 }
 
 #kz_icon_outcomes {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/outcomes.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/outcomes.svg) no-repeat top left;
 }
 
 #kz_icon_syllabus {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/discussions.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/discussions.svg) no-repeat top left;
 }
 
 #kz_icon_conferences {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/conferences.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/conferences.svg) no-repeat top left;
 }
 
 #kz_icon_quizzes {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/quizzes.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/quizzes.svg) no-repeat top left;
 }
 
 #kz_icon_settings {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/settings.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/settings.svg) no-repeat top left;
 }
 
 #kz_icon_users {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/users.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/users.svg) no-repeat top left;
 }
 
 #kz_icon_statistics {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/statistics.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/statistics.svg) no-repeat top left;
 }
 
 #kz_icon_permissions {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/permissions.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/permissions.svg) no-repeat top left;
 }
 
 #kz_icon_rubrics {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/rubrics.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/rubrics.svg) no-repeat top left;
 }
 
 #kz_icon_grading {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/grading.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/grading.svg) no-repeat top left;
 }
 
 #kz_icon_questionbanks {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/questionbanks.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/questionbanks.svg) no-repeat top left;
 }
 
 #kz_icon_subaccounts {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/subaccounts.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/subaccounts.svg) no-repeat top left;
 }
 
 #kz_icon_facultyjournal {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/facultyjournal.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/facultyjournal.svg) no-repeat top left;
 }
 
 #kz_icon_terms {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/terms.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/terms.svg) no-repeat top left;
 }
 
 #kz_icon_authentication {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/authentication.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/authentication.svg) no-repeat top left;
 }
 
 #kz_icon_sisimports {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/sisimports.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/sisimports.svg) no-repeat top left;
 }
 
 #kz_icon_themes {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/themes.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/themes.svg) no-repeat top left;
 }
 
 #kz_icon_developerkeys {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/developerkeys.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/developerkeys.svg) no-repeat top left;
 }
 
 #kz_icon_canvasdata {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/canvasdata.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/canvasdata.svg) no-repeat top left;
 }
 
 #kz_icon_admintools {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/admintools.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/admintools.svg) no-repeat top left;
 }
 
 /* @end */
@@ -476,39 +495,57 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 /* @group Non Standard LTI Icons */
 
 #kz_icon_attendance {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/attendance.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/attendance.svg) no-repeat top left;
 }
 
 #kz_icon_bookshelf {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/bookshelf.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/bookshelf.svg) no-repeat top left;
 }
 
 #kz_icon_chat {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/chat.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/chat.svg) no-repeat top left;
 }
 
 #kz_icon_scorm {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/scorm.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/scorm.svg) no-repeat top left;
 }
 
 #kz_icon_onenote {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/onenote.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/onenote.svg) no-repeat top left;
 }
 
 #kz_icon_officemix {
-	background: url(https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/svgicons/officemix.svg) no-repeat top left;
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/officemix.svg) no-repeat top left;
 	background-size: contain;
-	height: 57px;
-	width: 57px;
+	height: 25px;
+	width: 30px;
+}
+
+#kz_icon_office365 {
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/Microsoft_Logo.svg) no-repeat top left;
+	background-size: contain;
+	height: 25px;
+	width: 30px;
+}
+
+#kz_icon_googledrive {
+	background: url(http://www.eduridden.com/themes/kidzone/svgicons/Google_Drive_Logo.svg) no-repeat top left;
+	background-size: contain;
+	height: 25px;
+	width: 30px;
 }
 
 /* @end */
 
 /* @end */
+.ic-NavMenu__link-list {
+	font-size: .9em;
+}
 
 .list-view>ul>li>a, .list-view>nav>ul>li>a {
 	margin-bottom: 0px;
-	font-family: 'Lobster', cursive !important;
+	font-family: 'Love Ya Like A Sister', cursive !important;
+	color: #0087D7;
 }
 
 .list-view>ul>li>a:hover, 
@@ -533,7 +570,7 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 }
 
 .ic-app-course-menu {
-	padding: 10px 10px 10px 10px;
+	padding: 10px 10px 0px 0px;
 }
 
 #content {
@@ -550,9 +587,22 @@ body.modal #modal-box.login-box a {color: #fff !important;}
 }
 /* @end */
 
+/* @group MiniCal */
+
+#minical .fc-widget-content {
+	border: 1px solid #ccc;
+}
+
+#minical .fc-basic-view td.fc-day-number {
+	padding: 5px 2px;
+}
+
+/* @end */
+
 body {
-    background: url("https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/bg/page.jpg") repeat-y scroll center top transparent;
+    background: url("http://www.eduridden.com/themes/kidzone/bg/page.jpg") repeat-y scroll center top transparent;
     font-family: 'Lato', sans-serif;
+    font-size: .8rem;
 }
 
 input, button, select, textarea {
@@ -583,13 +633,15 @@ body.course-menu-expanded:not(.ic-no-flex-layout):not(.embedded) .ic-app-main-la
 }
 
 h1, h2 {
-	font-family: Lobster;
+	font-family: 'Love Ya Like A Sister', cursive;
 }
 .pages.show .course-title {
 	color: #f05e36;
 }
 .list-view>ul>li, .list-view>nav>ul>li {
     width: 100px;
+    border-bottom: 1px dotted #ccc;
+    min-height: 40px;
 }
 
 .ic-app-header__logomark {
@@ -619,7 +671,7 @@ h1, h2 {
 }
 .list-view>ul>li>a, .list-view>nav>ul>li>a {
     border-radius: 15px;
-    padding: 5px 10px;
+    padding: 5px 0px;
 }
 .list-view>ul>li, .list-view>nav>ul>li {
     padding: 0;

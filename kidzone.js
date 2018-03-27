@@ -206,7 +206,7 @@ $(function(){
 //End Progress Bar
 
 // Start Login Video
-$('body.ic-Login-Body .ic-app').prepend('<video autoplay loop id="bgvid"><source src="https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/video/kindergarten.webm" type="video/webm"><source src="https://dl.dropboxusercontent.com/u/4035571/Canvas%20Themes/kidzone/video/kindergarten.mp4" type="video/mp4"></video><div class="video-dottedoverlay"></div>');
+$('body.ic-Login-Body .ic-app').prepend('<video autoplay loop id="bgvid"><source src="http://www.eduridden.com/themes/kidzone/video/kindergarten.webm" type="video/webm"><source src="http://www.eduridden.com/themes/kidzone/video/kindergarten.mp4" type="video/mp4"></video><div class="video-dottedoverlay"></div>');
 // End Login Video
 
 // change Inbox icon
@@ -236,11 +236,12 @@ var getProperty = function (propertyName) {
 };
 
 
-$('ul#menu > li.menu-item').each(function(index,elm){
+$('ul.ic-app-header__menu-list > li.ic-app-header__menu-list-item').each(function(index,elm){
 	thisText = $('a',elm).text().trim().split('®').join('');
 
 	$('a', elm).prepend('<div class="kz_main-menu-icon" id="' + getProperty(thisText) + '" > </div>')
 });
+
 // End Change Menu icons
 
 
@@ -283,6 +284,9 @@ var obj = {
 	Themes: 'kz_icon_themes',
 	'Developer Keys': 'kz_icon_developerkeys',
 	'Canvas Data Portal': 'kz_icon_canvasdata',
+	'Arc Media Library': 'kz_icon_arcmedia',
+	'Google Drive': 'kz_icon_googledrive',
+	'Office 365': 'kz_icon_office365',
 	'Admin Tools': 'kz_icon_admintools'
 	
 };
@@ -298,5 +302,26 @@ $('ul#section-tabs > li.section').each(function(index,elm){
 	$('a', elm).prepend('<div class="kz_course-menu-icon" id="' + getProperty(thisText) + '" > </div>')
 });
 // End Change Course icons
+
+
+// Start Sample Screen Reader
+$(function(){
+  var path = window.location.pathname.split( '/' );
+  if(path[3] == "pages") {
+
+    var say = function(toSpeak) {
+      var stageSpeech = new SpeechSynthesisUtterance(toSpeak);
+      window.speechSynthesis.speak(stageSpeech);
+    }
+
+    var pageContent = document.querySelector('#wiki_page_show .show-content');
+    $(pageContent).before('<button type="button" id="playSpeech">Play</button>')
+
+    $('#playSpeech').click(function(){
+      say(pageContent.textContent);
+    });
+
+  }
+});
 
 });
